@@ -5,8 +5,13 @@ multiplicando, el multiplicador y el producto.*/
 using namespace std;
 int main(){
 	int x,i,p;
+	cout<<"BIENVENIDO AL PROGRAMA DE TABLA DE MULTIPLICAR"<<endl;
+	cout<<"------------------------------------------------"<<endl;
+
 	cout<<"Ingrese el numero: "<<endl;
 	cin>>x;
+	
+	cout<<"Su tabla de multiplicar es: "<<endl;
 	i=1;
 	do{
 		p= x*i;
