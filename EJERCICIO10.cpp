@@ -2,24 +2,29 @@
 y si mismo.*/
 
 #include <iostream>
+#include <windows.h>
+
 using namespace std;
 int main(){
 	int n, CD, i, sp, np;
-	cout<<"INGRESE NUMERO: ";
+	SetConsoleOutputCP(CP_UTF8);
+
+	cout<<"Ingrese número: ";
 	cin>>n;
-	i = 1;
+
 	CD = 0;
-	while ( i <= n ){
-		if (n % i == 0){
-			CD = CD +1;
+	
+		for( i=1 ; i<=n ; i++){
+		if (n%i==0){
+			CD=CD+1;
 		}
-		i=i+ 1;
 	}
+
 	if (CD == 2){
-		cout << "Si es un numero primo"<< endl;
+		cout << "Si es un número primo"<< endl;
 	
 	}else{
-			cout << "No es un numero primo"<< endl;
+			cout << "No es un número primo"<< endl;
 	}
 	return 0;
 }
